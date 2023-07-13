@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lBVt7zsOTVUjJWdsIF81nm5XaY2NGUj1p7VRaLVzoLKqsLaGE8eGYG4Y+5AACiPjd74DpahXkEEVnpCRX0N7Ww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jbpea\\source\\repos\\Links\\Links.App\\Links.Patterns.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jbpea\\.nuget\\packages\\anglesharp\\1.0.4\\anglesharp.1.0.4.nupkg.sha512",
+    "C:\\Users\\jbpea\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

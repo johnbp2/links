@@ -1,0 +1,12 @@
+C:\Users\jbpea\source\repos\Links\Links.App\bin\Debug\net7.0\Links.App.deps.json
+C:\Users\jbpea\source\repos\Links\Links.App\bin\Debug\net7.0\Links.App.dll
+C:\Users\jbpea\source\repos\Links\Links.App\bin\Debug\net7.0\Links.App.pdb
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\Links.App.csproj.AssemblyReference.cache
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\Links.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\Links.App.AssemblyInfoInputs.cache
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\Links.App.AssemblyInfo.cs
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\Links.App.csproj.CoreCompileInputs.cache
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\Links.App.dll
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\refint\Links.App.dll
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\Links.App.pdb
+C:\Users\jbpea\source\repos\Links\Links.App\obj\Debug\net7.0\ref\Links.App.dll
