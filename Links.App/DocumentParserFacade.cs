@@ -11,8 +11,22 @@ namespace Links.Application
 {
     public static class DocumentParserFacade
     {
+        public static bool IsValidSavePath(string path)
+        {
+            return IsValidPath(path, false);
+        }
 
         public static bool IsValidWebPageFileExtension(string path)
+        {
+            return IsValidPath(path, true);
+            
+        }
+
+        //public static void test()
+        //{
+        //System.IO.Path.GetFileName()
+        //}
+        private static bool IsValidPath(string path, bool fileShouldExist)
         {
 
             if (path == null)
@@ -26,31 +40,41 @@ namespace Links.Application
             }
             else
             {
-                try
+                if (fileShouldExist)
                 {
-                    var test = new FileInfo(path);
-                    if (!test.Exists)
-                    {
 
-                        return false;
-                    }
-                    else
+                    try
                     {
-
-                        if (test.Extension == ".html" || test.Extension == ".htm")
+                        var file = new FileInfo(path);
+                        if (!file.Exists)
                         {
-                            return true;
+
+                            return false;
                         }
                         else
                         {
-                            return false;
+
+                            if (file.Extension == ".html" || file.Extension == ".htm")
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
                         }
                     }
+                    catch (Exception ex)
+                    {
+                        // throw ex;
+                        return false;
+                    }
+
                 }
-                catch (Exception ex)
+                else
                 {
-                    // throw ex;
-                    return false;
+                    //it's a valid path to a directory thats allm we care about
+                    return true;
                 }
 
             }

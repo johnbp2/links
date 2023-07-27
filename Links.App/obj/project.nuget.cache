@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lBVt7zsOTVUjJWdsIF81nm5XaY2NGUj1p7VRaLVzoLKqsLaGE8eGYG4Y+5AACiPjd74DpahXkEEVnpCRX0N7Ww==",
+  "dgSpecHash": "h53enYv5xBopk+04vgO3Cj6gW0n2NftpJ2wTrJjvf+yjgQaNcFp3Gp92JDCI8i34Mbbuben9v5Y5ejR2/+gtbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jbpea\\source\\repos\\Links\\Links.App\\Links.Patterns.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jbpea\\.nuget\\packages\\anglesharp\\1.0.4\\anglesharp.1.0.4.nupkg.sha512",
+    "C:\\Users\\jbpea\\.nuget\\packages\\htmlagilitypack\\1.11.50\\htmlagilitypack.1.11.50.nupkg.sha512",
     "C:\\Users\\jbpea\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
   ],
   "logs": []
