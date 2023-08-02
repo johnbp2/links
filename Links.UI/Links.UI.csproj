@@ -79,5 +79,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Links.App\Links.Patterns.csproj">
+      <Project>{6b791bc9-3fae-4585-a293-cf418081d5a3}</Project>
+      <Name>Links.Patterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Links\Links.csproj">
+      <Project>{958e975b-f195-4b09-bba5-870a6f78bb8d}</Project>
+      <Name>Links</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

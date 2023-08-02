@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Links.Application
+namespace Links.App
 {
 
     public interface IUseCase<TInput, TOutput>
