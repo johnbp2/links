@@ -6,8 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using AngleSharp.Html.Dom;
 
-namespace Links.Application
+namespace Links.App
 {
     public static class DocumentParserFacade
     {
@@ -90,12 +91,18 @@ namespace Links.Application
         }
 
 
-        public static IEnumerable<Tuple<string, string>> AngleSharpParse(string filePath, out IHtmlCollection<IElement> hrefs )
+        private static IHtmlDocument AngleSharpParse(string filePath)
         {
-            var hrefTags = new List<Tuple<string, string>>();
-
             var parser = new HtmlParser();
             var document = parser.ParseDocument(getFileContents(filePath));
+            return document;
+        }
+
+
+        public static IEnumerable<Tuple<string, string>> ProcessDocumentNodes(string filePath, out IHtmlCollection<IElement> hrefs )
+        {
+            var hrefTags = new List<Tuple<string, string>>();
+            var document = DocumentParserFacade.AngleSharpParse(filePath);    
             hrefs = document.QuerySelectorAll("a");
             foreach (IElement element in document.QuerySelectorAll("a"))
             {
@@ -105,6 +112,13 @@ namespace Links.Application
             }
 
             return hrefTags;
+        }
+
+
+        public static IHtmlAllCollection?  GetNodes(string filePath)
+        {
+            var doc = DocumentParserFacade.AngleSharpParse(filePath);
+            return doc.All;
         }
     }
 }
